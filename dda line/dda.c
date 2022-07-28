@@ -1,6 +1,4 @@
-
 #include<stdio.h>
-#include<math.h>
 
 int abs (int n)
 {
@@ -27,21 +25,17 @@ void DDA(int X0, int Y0, int X1, int Y1)
 
 		X += Xinc;
 		Y += Yinc;
-
-
 	}
 }
 
 int main()
 {
     int x0,y0,x1,y1;
-    scanf("%d ",&x0);
-    scanf("%d ",&y0);
-    scanf("%d ",&x1);
-    scanf("%d ",&y1);
+    printf("Enter first coor: ");
+    scanf("%d%d", &x0,&y0);
+    printf("Enter second coor: ");
+    scanf("%d%d", &x1, &y1);
 
-	//int X0 = 2, Y0 = 2, X1 = 14, Y1 = 16;
-	//DDA(2, 2, 14, 16);
 	DDA(x0,y0,x1,y1);
 	return 0;
 }
